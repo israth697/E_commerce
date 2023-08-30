@@ -8,6 +8,10 @@ class ProductdController extends Controller
 {
     public function product () {
  
-        return view ('backend.pages.Product.product');
-}
+        return view('backend.pages.Product.product');
+    }
+
+    public function product_form(){
+        return view('backend.pages.Product.product_form');
+    }
 }

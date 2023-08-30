@@ -19,24 +19,24 @@
 
 <!-- Heading -->
 <div class="sidebar-heading">
-    Interface
+    Fishy
 </div>
 
 <!-- Nav Item - Pages Collapse Menu -->
 <li class="nav-item active">
-    <a class="nav-link" href="index.html">
+    <a class="nav-link" href="{{route('product.list')}}">
         <i class="fas fa-fw fa-tachometer-alt"></i>
         <span>Product</span></a>
 </li>
 
 <li class="nav-item active">
-    <a class="nav-link" href="index.html">
+    <a class="nav-link" href="{{route('category.list')}}">
         <i class="fas fa-fw fa-tachometer-alt"></i>
         <span>Category</span></a>
 </li>
 
 <li class="nav-item active">
-    <a class="nav-link" href="index.html">
+    <a class="nav-link" href="{{route('brand.list')}}">
         <i class="fas fa-fw fa-tachometer-alt"></i>
         <span>Brand</span></a>
 </li>
