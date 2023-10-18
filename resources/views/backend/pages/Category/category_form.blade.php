@@ -1,10 +1,6 @@
 @extends('backend.master')
 @section('content')
 
-
-
-
-@endsection
 <div class="container">
   <h2>Arms Type Details</h2>
   <form action="{{route('category.search')}}" method="post" enctype="multipart/form-data">
@@ -34,3 +30,6 @@
   <button type="submit" class="btn btn-primary">Submit</button>
 </form>
 </div>
+
+
+@endsection

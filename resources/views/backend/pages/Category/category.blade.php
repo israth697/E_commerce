@@ -2,9 +2,9 @@
 @section('content')
 
 <div class="container">
-    <h2>Arms Item</h2>
+    <h2>Category Item</h2>
     <br>
-    <a class="btn btn-success" href="{{route('category.form')}}">Add New Arms Item</a>
+    <a class="btn btn-success" href="{{route('category.form')}}">Add Fish Category</a>
  <br>
 <table class="table">
   <thead>

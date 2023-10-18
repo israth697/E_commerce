@@ -17,24 +17,25 @@ class CategoryController extends Controller
         return view('backend.pages.Category.category_form')->with('message','Data added successfully !!!');
      }
 
-     public function category_search(){
+     public function category_store(Request $request){
       
 
         
-         // $request->validate([
-         //     'name'=>'required',
-         //     'image'=>'required',
-         //     'description'=>'required',
+         $request->validate([
+             'name'=>'required',
+           
              
-         // ]); 
+             'description'=>'required',
+             
+         ]); 
          
          
          //  dd($request->all());
          Category::create([
-             // database column name=>$request->input field name
-            //  'name'=>$request->name,
-            //  'description'=>$request->description,
-            //  'image'=>$fileName,
+            //  database column name=>$request->input field name
+             'name'=>$request->name,
+             'description'=>$request->description,
+             
              
              
          
