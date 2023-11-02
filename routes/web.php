@@ -4,6 +4,7 @@ use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\ProductdController;
 use App\Http\Controllers\BrandController;
 use App\Http\Controllers\CategoryController;
+use App\Http\Controllers\RoleController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -28,5 +29,5 @@ Route::get('/category',[CategoryController::class,'category']) ->name('category.
 Route::get('/category/form',[CategoryController::class,'category_form']) ->name('category.form');
 Route::post('/category/store',[CategoryController::class,'category_store']) ->name('category.store');
 
-Route::get('/role',[CategoryController::class,'category']) ->name('category.list');
+Route::get('/role',[RoleController::class,'role']) ->name('role.list');
 

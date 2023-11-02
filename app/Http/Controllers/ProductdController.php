@@ -26,22 +26,22 @@ class ProductdController extends Controller
             
         ]); 
         
-        $fileName = null;
-        if($request->hasFile('image'))
+        // $fileName = null;
+        // if($request->hasFile('image'))
 
-        {
+        // {
 
-            $fileName =date('Ymdhmi').'.'.$request->file('image')->getClientOriginalExtension();
-            $request->file('image')->storeAs('/uploads',$fileName);
+        //     $fileName =date('Ymdhmi').'.'.$request->file('image')->getClientOriginalExtension();
+        //     $request->file('image')->storeAs('/uploads',$fileName);
 
             
-        } 
+        // } 
         //  dd($request->all());
         Product::create([
             // database column name=>$request->input field name
             'name'=>$request->name,
             'description'=>$request->description,
-            'image'=>$fileName,
+            
             
             
         
